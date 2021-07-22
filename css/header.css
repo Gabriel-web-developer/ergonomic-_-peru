@@ -1,0 +1,414 @@
+/*-------Importaciones de estilos y fonts---------*/
+
+@import url(main.css);
+@import url(footer.css);
+
+/*----------Estilos Universales---------*/
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*------------------Tipografia----------------*/
+
+@import url('https://fonts.googleapis.com/css2? family = Exo & display = swap');
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../font/Roboto/Roboto-Regular.ttf);
+}
+
+
+body {
+    background: #fff;
+}
+
+/*-----------------------Cabecera----------------------*/
+
+.header {
+    font-family: "Roboto";
+    color: #000;
+    height: 60px;
+    background: #eee;
+    box-shadow: 2px 0px 5px #333;
+}
+
+.cabecera__header {
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 700px) {
+    .cabecera__header {
+        justify-content: left;
+    }
+}
+
+.logo {
+    text-align:center;
+    width: 155px;
+    left: 10px;
+    object-fit: cover;
+    position: absolute;
+}
+
+.title__header {
+    display: inline-block;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 28px;
+    margin: 0 20px 0 0;
+}
+
+@media (max-width: 305px) {
+    .title__header {
+        padding: 0;
+        font-size: 27px;
+    }
+    .header {
+        height: 70px;
+    }
+}
+
+.chair {
+    margin-left: 6px;
+    width: 50px;
+    height: 50px;
+}
+
+/*-----------------------------Menu de NavegaciÃ³n--------------------*/
+
+.menu{
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    background: #39b;
+    color: #333;
+    list-style: none;
+    transition: all .3s;
+    padding: 0;
+    margin: 0;
+    z-index: 6000; 
+    transform: translateX(-100%);
+}
+
+@media (max-width: 305px) {
+    .menu {
+        top: 70px;
+    }
+}
+
+@media (min-width: 725px) {
+    .menu {
+    background: none;
+    position: static;
+    color: #000;
+    width: auto;
+    height: auto;
+    transform: translateX(0%); 
+    float: right;
+    display: flex;
+    }
+
+.icon-bars {
+    display: none;
+  }
+
+  .title__header {
+      margin: 0;
+  }
+
+}
+
+.menu__link {
+    font-family: sans-serif; 
+    font-weight: 400;
+    font-style: normal; 
+    margin: 7px 5px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 12px;
+    transition: border 0.3s;
+}
+
+.menu__link--select {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    margin: 7px 5px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 12px;
+    transition: border 0.3s;
+}
+
+.menu__link:hover,.menu__link--select:hover {
+   background: rgba(0,0,0,0.3);
+}
+
+@media (min-width: 550px) {
+    .menu__link:hover,.menu__link--select:hover {
+        background: rgba(0,0,0,0.2);
+        border-radius: 2px ;
+    }
+}
+
+/*-------------------submenu con imagenes-------------*/
+
+.submenu__image {
+    position: relative;
+    z-index: 3000;
+    object-fit: cover;
+    margin: 0 3px;
+    height: 140px;
+    width: 110px;
+    display: none;
+}
+
+ 
+.submenu__image:hover{
+    transform: scale(1.3);
+    cursor: pointer; 
+} 
+
+
+.submenu___li {
+    padding: 5px 0;
+    height: 140px;
+    list-style:none;
+}
+
+.sub-menu {
+    position: relative;
+    z-index: 3000;
+    border-radius: 2px;
+    box-shadow: 1px 1px 5px;
+    width: 90%;
+    height: max-content;
+    background: linear-gradient( -30deg, #333,  #eee);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: none;
+}
+
+@media (min-width: 400px) {
+    .sub-menu {
+        width: 350px;
+    }
+}
+
+@media (min-width: 681px) {
+    .sub-menu {
+        height: max-content;
+        max-width: 350px;
+        margin-left: -20%;
+        position: absolute;
+    }
+}
+
+.submenu:hover .submenu__image {
+    display: block;
+}
+
+.submenu:hover .sub-menu {
+    display: flex;
+}
+
+
+/*------------extra-----tandem-------*/
+
+.tandem {
+    margin: auto;
+    width: 200px;
+    object-fit: contain;
+    height:auto;
+}
+
+/*----------------------accesorios-----------------*/
+
+ .sub--menu {
+    position: relative;
+    z-index: 3000;
+    border-radius: 2px;
+    box-shadow: 1px 1px 5px;
+    width: 90%;
+    height: max-content;
+    background: linear-gradient( -30deg, #333,  #eee  );
+    display: flex;
+    flex-wrap: wrap;
+    display: none;
+ }
+
+ .sub--menu .submenu___li {
+    padding: 4px 0;
+    height:  130px;
+}
+
+
+ @media (min-width: 400px) {
+    .sub--menu {
+        width: 350px;
+    }
+
+
+}
+
+@media (min-width: 681px) {
+    .sub--menu {
+        height: 240px;
+        max-width: 350px;
+        margin-left: -35%;
+        position: absolute;
+    }
+
+    .sub--menu .submenu___li {
+        margin: 0 auto;
+        height: 100px;
+        padding: 0;
+    }
+
+}
+
+.submenu__image_accesories {
+    position: relative;
+    z-index: 2000;
+    object-fit: cover;
+    margin: 5px 3px;
+    height: 130px;
+    width: 102px;
+}
+
+.submenu__image_accesories:hover {
+    transform: scale(1.3);
+    cursor: pointer; 
+}
+
+.submenu:hover .submenu__image_accesories {
+    display: block;
+}
+
+.submenu__2:hover .sub--menu {
+    display: flex;
+}
+
+.piston {
+    width: 90px;
+    height: 110px;
+    object-fit: contain;
+}
+
+.piston__main {
+    object-fit: contain;
+}
+
+.spider {
+    object-fit: contain;
+}
+
+/*----------------submenus-----------------*/
+
+
+.submenu .sub__menu {
+    display: none;
+    position: static;
+    list-style: none;
+    background: #39b;
+  }
+
+@media (min-width: 672px) {
+    .submenu .sub__menu {
+        position: absolute;
+    } 
+}
+
+.submenu:hover .sub__menu {
+    display: block;
+}
+
+.submenu__li:hover {
+    background: rgba(0,0,0,0.3);
+}
+
+
+
+/*------------------------------Icon----------------------------*/
+
+.icon-whatsapp {
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    bottom: 30px;
+    right: 20px;
+    background: #37DA10;
+    color: #fff;
+    font-size: 40px;
+    padding: 5.5px 0px;
+    border-radius: 50%;
+    z-index: 3;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+}
+
+.icon-whatsapp:hover {
+    background: #fff;
+    color:#37DA10;
+    cursor: pointer; 
+}
+
+.icon-bars {
+    position: absolute;
+    text-align: center;
+    top: 8px;
+    right: 20px;
+    font-size: 30px;
+    height: 40px;
+    cursor:pointer;
+    border-radius: 10%; 
+}
+
+
+.icon-arrow {
+    position: absolute;
+    right: 10px;
+    font-weight: 100;
+    font-size: 13px;
+}
+
+@media (min-width: 550px) {
+    .icon-arrow {
+        position: static;
+        padding-left: 3px;
+    }
+}
+
+
+
+
+/*------------------agregados---------*/
+
+.ligth {
+    z-index: 2000;
+    background: rgba(0,0,0,0.3);
+}
+
+.ligth-2 {
+    background: rgba(0,0,0,0.1)
+}
+
+.abrir {
+    z-index: 1000px;
+    transform: translateX(0);
+}
+
+.close {
+    transform: translateX(0);
+}
+

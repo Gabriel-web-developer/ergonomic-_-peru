@@ -1,0 +1,134 @@
+
+
+/*------------------------Import-------------------*/
+
+@import url(header.css);
+@import url(footer.css);
+
+
+/*------------------Main__pages---------------*/
+
+
+.main__info {
+    position: relative;
+    z-index: -5000;
+    padding: 8px 12px;
+}
+
+@media (min-width: 700px) {
+    .main__info {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.main__info__content {
+    margin: 10% 0;
+}
+
+.main__info__title {
+    max-width: 300px;
+    font-size: 38px;
+    margin: 20px 0 30px 20px;
+}
+
+.main__info__text {
+    color:rgb(100, 100, 100);
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 10px 0 0 20px;
+    max-width: 500px;
+}
+
+.main__info__img {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.info__img {
+    object-fit: cover;
+    position: relative;
+    z-index: -4000;
+    width: 300px;
+    height: 400px;
+}
+
+/*-------------main ---- content----------------*/
+
+.main__catalogue {
+    padding: 10px 20px;
+}
+
+.border {
+    border-bottom: 2px solid #000;
+}
+
+.border__title {
+    text-align: center;
+    margin: 5px 0;
+    font-size: 30px;
+}
+
+/*------------------div of catalogue-------------*/
+
+
+
+.catalogue__container {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.catalogue {
+    position: relative;
+}
+
+.catalogue__img {
+    object-fit: cover;
+    width: 150px;
+    height: 190px;
+}
+
+.img__scale {
+    transform: scale(1.1);
+}
+
+.img__contain {
+    object-fit: contain;
+}
+
+.figure {
+    position: relative;
+    overflow: hidden;
+    margin: 20px 5px;
+    cursor: pointer;
+    width: 155px;
+    height: 195px;
+    border-radius: 2px;
+}
+
+.capa {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-out;
+    text-align: center;
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.figure:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.catalogue__title {
+    font-size: 18px;
+    margin: 50% auto;
+    max-width: 140px;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+}
