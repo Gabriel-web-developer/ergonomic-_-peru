@@ -35,6 +35,7 @@
 }
 
 .caracteristicas__title {
+    text-transform: uppercase;
     font-size: 35px;
     margin: 8px 0;
 }
@@ -120,12 +121,14 @@
 }
 
 .slider__img {
-    position: relative;
+    display: block;
     z-index: -5000;
     object-fit: contain;
     height: 500px;
     width: 100%;
 }
+
+/*--- end estilos generales ---*/
 
 /*-------------------- SIAM --------------------*/
 
@@ -143,6 +146,7 @@
 .slider__ul__siam {
     text-align: center;
     display: flex;
+    margin-left: -100%;
     width: 500%;
 }
 
@@ -159,6 +163,7 @@
 }
 
 .slider__ul__sonic {
+    margin-left: -100%;
     transition: all 500ms;
     text-align: center;
     display: flex;
@@ -182,6 +187,7 @@
 }
 
 .slider__ul__xenia {
+    margin-left: -100%;
     transition: all 500ms;
     display: flex;
     text-align: center;
@@ -202,6 +208,7 @@
 
 .slider__ul__sandy {
     transition: all 500ms;
+    margin-left: -100%;
     text-align: center;
     display: flex;
     width: 300%;
@@ -221,6 +228,7 @@
 
 .slider__ul__vero {
     transition: all 500ms;
+    margin-left: -100%;
     text-align: center;
     display: flex;
     width: 400%;
@@ -241,6 +249,7 @@
 .slider__ul__liann {
     transition: all 500ms;
     text-align: center;
+    margin-left: -100%;
     display: flex;
     width: 400%;
 }
@@ -273,6 +282,7 @@
 .slider__ul__escocia {
     transition: all 500ms;
     text-align: center;
+    margin-left: -100%;
     display: flex;
     width: 500%;
 }
@@ -303,6 +313,7 @@
 }
 
 .slider__ul__adara {
+    margin-left: -100%;
     transition: all 500ms;
     display: flex; 
     text-align: center;
@@ -407,11 +418,158 @@
     }
 }
 
+/*----- Linea gerencial -----*/
+/*----- Linea de alta gama -----*/
+/*----- Linea de espera -----*/
+
+/*--- boston ---*/
+
+.slider__ul__boston {
+    display: flex;
+    width: 1300%;
+    margin-left: -100%;
+    text-align: center;
+}
+
+.color-boston {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #333;
+    box-shadow: 1px 1px 8px #000;;
+}
+
+.color-boston-2 {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: 8px;
+    box-shadow: 1px 1px 8px #000;
+    background: rgb(49, 66, 255);
+}
+
+.color-boston-3 {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: 8px;
+    box-shadow: 1px 1px 8px #000;
+    background: rgb(255, 98, 51);
+}
+
+.color-boston-4 {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-top: 8px;
+    box-shadow: 1px 1px 8px #000;
+    background: rgb(255, 238, 0);
+}
+
+/*--- eros ---*/
+
+.slider__ul__eros {
+    display: flex;
+    margin-left: -100%;
+    text-align: center;
+    width: 300%;
+}
+
+.color-eros {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #000;
+    box-shadow: 1px 1px 8px #000;;
+}
+
+.color-eros-2 {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    margin-left: 8px;
+    height: 45px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 1px 1px 8px #000;;
+}
+
+/*--- luxor ---*/
+
+.slider__ul__luxor {
+    display: flex;
+    width: 500%;
+    margin-left: -100%;
+    text-align: center;
+}
+
+.color-luxor {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #000;
+    box-shadow: 1px 1px 8px #000;;
+}
+
+.color-luxor-2 {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    margin-left: 8px;
+    height: 45px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 1px 1px 8px #000;;
+}
+
+/*--- orieta ---*/
+
+.slider__ul__orieta {
+    width: 300%;
+    margin-left: -100%;
+    text-align: center;
+    display: flex;
+}
+
+.color-orieta {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px #000; 
+    background: rgb(16, 16, 16);
+}
+
+/*----- Linea de gamer -----*/
+
 /*--- gamer ---*/
 
 .slider__ul__gamer {
-    width: 1000%;
     display: flex;
+    width: 1000%;
+    margin-left: -100%;
     text-align: center;
 }
 
@@ -440,3 +598,115 @@
 
 
 
+/*----- Linea de tandem -----*/
+
+
+/*-- tandem brend ---*/
+
+.slider__ul__brend {
+    width: 400%;
+    margin-left: -100%;
+    display: flex;
+    text-align: center;
+}
+
+.color-brend {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px #000;
+    margin-left: 5px;
+    background: rgb(65, 104, 202);
+}
+
+.color-brend-2 {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px #000;
+    margin-left: 5px;
+    background: #333;
+}
+
+.color-brend-3 {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px #000;
+    margin-left: 5px;
+    background: #dbdbdb;
+}
+
+/*-- tandem bosto ---*/
+
+.slider__ul__bosto {
+    width: 600%;
+    margin-left: -100%;
+    display: flex;
+    text-align: center;
+}
+
+.color-bosto {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px #000;
+    margin-left: 5px;
+    background: #8d8d8d;
+}
+
+.color-bosto-2 {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px #000;
+    margin-left: 5px;
+    background: rgb(33, 52, 255);
+}
+
+.color-bosto-3 {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px #000;
+    margin-left: 5px;
+    background: rgb(252, 255, 47);
+}
+
+/*--- tandem-3 ---*/
+
+.slider__ul__tandem-3 {
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+
+.color-tandem-3 {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px #000;
+    margin-left: 5px;
+    background: #4f4f4f;
+}

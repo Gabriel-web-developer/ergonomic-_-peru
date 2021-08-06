@@ -24,7 +24,7 @@ slider.insertAdjacentElement('afterbegin',sliderSectionLast);
 function Next() {
   let sliderSectionFirst = document.querySelectorAll(".slider__li")[0];
     slider.style.marginLeft = "-200%";
-     slider.style.transition = "all 0.5s";
+    slider.style.transition = "all 0.5s";
     setTimeout(function(){
      slider.style.transition = "none";
    slider.insertAdjacentElement('beforeend', sliderSectionFirst);
@@ -38,7 +38,7 @@ function Prev() {
 let sliderSectionLast = sliderSection[sliderSection.length -1];
 
     slider.style.marginLeft = "-0%";
-     slider.style.transition = "all 0.5s";
+    slider.style.transition = "all 0.5s";
     setTimeout(function(){
      slider.style.transition = "none";
    slider.insertAdjacentElement('afterbegin', sliderSectionLast);
@@ -46,14 +46,14 @@ let sliderSectionLast = sliderSection[sliderSection.length -1];
   }, 500);
 }
 
+
 // Botones
 
 const btnLeft = document.querySelector("#btn-left");
 const btnRight = document.querySelector("#btn-right");
 
 btnLeft.addEventListener('click', function(){
-  Prev(); 
-   
+   Prev(); 
 });
 
 
