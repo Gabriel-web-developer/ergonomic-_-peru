@@ -1,13 +1,16 @@
+// funciona de abrir menu 
 
+let condicional = -100;
+var icon = document.querySelector('.icon-bars');
+var menu = document.querySelector('.menu');
 
-$('.icon-bars').on('click', function () {
-    $('.menu').toggleClass('abrir');
-   }); 
+icon.addEventListener('click', function(){
+  if (condicional == -100) {
+    menu.classList.toggle('abrir');
+  }
 
-// $('.submenu').click(function(){
-//     $(this).children(".sub__menu").slideToggle(); 
-// });
-
+});
+   
 // Slider 
 
 const slider = document.querySelector("#slider");
@@ -46,7 +49,6 @@ let sliderSectionLast = sliderSection[sliderSection.length -1];
 setInterval(function(){
   Next(); 
 }, 5000);
-
 
 
 // Botones

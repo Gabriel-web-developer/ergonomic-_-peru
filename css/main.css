@@ -1,9 +1,12 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Cinzel&family=Monoton&display=swap');
+
 /*-----------------------Main---------------------*/
 
-main {
-    font-family: "Roboto";
+.main {
+    font-family: 'cinze', sans-serif;
 }
+
 /*------------------------Intro page--------------------*/
 
 .intro__container {
@@ -149,11 +152,6 @@ main {
     }
 }
 
-/* @media (min-width: 1300px) {
-    .category__chairs {
-
-    }
-} */
 
 /*---box-right---*/
 
@@ -166,22 +164,24 @@ main {
     margin: 10px auto;
     padding: 10px 20px;
     color: #fff;
-    background: #333;
+    border-radius: 10px;
+    background: #797979;
+    box-shadow: 0 0 20px #333;;
     height: 650px;
 }
 
-
-@media (min-width: 950px) {
+@media (min-width: 400px) {
     .content__right {
         width: 320px;
         height: 600px;
     }
 }
 
+
 @media (min-width: 1300px) {
     .content__right {
         position: absolute;
-        right: 20px;
+        right: 50px;
     }
 }
 
@@ -197,19 +197,41 @@ main {
     text-align: justify;
 }
 
-
-.promo {
+.promocion {
+    position: relative;
     width: 100%;
-    height: 200px;
+}
+
+.promo__ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.promo__li {
+    
+    width: 100%;
+    list-style: none;
+}
+
+.promo__img {
+    width: 100%;
+    height: 220px;
+    position: absolute;
+    top: 0;
+    left: 0;
     object-fit: cover;
     box-shadow: 2px 2px 10px #000;
     -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, transparent,  rgba(255,255,255,0.4));
 
-    animation-name: promo;
-    animation-duration: 0.7s;
-    animation-timing-function: linear;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+    animation: promo 0.7s linear alternate infinite
+}
+
+@media (min-width: 500px) {
+    .promo__img {
+        height: 230px;
+    }
 }
 
  @keyframes promo {
@@ -217,110 +239,99 @@ main {
     100%{transform: scale(1);}
 } 
 
+/* .promo__1 {
+    animation: promo-1 5s infinite alternate ;
+}
+
+@keyframes promo-1 {
+    0%{
+        opacity: 1;
+        visibility: visible;
+    
+    }
+    100%{
+        opacity: -1;
+        visibility: hidden;
+    }
+}
+
+.promo__2 {
+    animation: promo-2 8s infinite alternate;
+}
+
+@keyframes promo-2 {
+    0%{
+        opacity: 1;
+        visibility: visible;
+    
+    }
+    100%{
+        opacity: -1;
+        visibility: hidden;
+    }
+}
+
+.promo__3 {
+    animation: promo-3 10s infinite alternate;
+}
+
+@keyframes promo-3 {
+    0%{
+        opacity: 1;
+        visibility: visible;
+    
+    }
+    100%{
+        opacity: -1;
+        visibility: hidden;
+    }
+} */
 
 /*------------------sliders------------------*/
 
 .slider {
+    margin-top: 60px;
+    position: relative;
     overflow: hidden;
 }
 
-.slider ul {
-    margin-left: -100%;
-    width: 100%;
+.container__slider {
+    width: 500%;
     display: flex;
 }
 
-.slider li {
+.slider__li {
     width: 100%;
+    height: max-content;
     list-style: none;
 }
 
-.slider img, video {
+.slider__img {
     position: relative;
     z-index: -300;
-    height: 200px;
+    object-fit: cover;
+    width: 100vw;
+    max-height: 120%;
+    min-height: 120px;
 }
 
 @media (min-width: 500px) {
-    .slider ul {
-        width: 300%;
-    }
-    
-    .slider img, video {
+    .container__slider {
         width: 100%;
     }
-}
 
-
-
-@media (min-width: 300px) {
-    .slider img, video {
-        height: 240px;
+    .slider__li {
+        width: 100%;
     }
-}
-
-@media (min-width: 370px) {
-    .slider img, video {
-        height: 260px;
-    }
-}
-
-@media (min-width: 400px) {
-    .slider img, video {
-        height: 280px;
-        object-fit: cover;
-    }
-}
-
-@media (min-width: 420px) {
-    .slider img, video {
-        height: 300px;
-    }
-}
-
-@media (min-width: 450px) {
-    .slider img, video {
-        height: 300px;
-    }
-}
-
-@media (min-width: 460px) {
-    .slider img, video {
-        height: 320px;
-    }
-}
-
-@media (min-width: 673px) {
-    .slider img, video {
-        height: 460px;
-        object-fit: cover;
-    }
-}
-
-@media (min-width: 1200px) {
-    .slider img, video {
-        height: 500px;
-    }
-
-    .slider {
-        position: relative;
-        z-index: -100;
-        box-shadow: 1px 1px 6px #000;
-        margin: 25px auto 0 auto;
-        width: 90%;
-        height: 500px;
-    }
+    
 }
 
 
 /*------------botones--slider---------------*/
-
-
-
 .slider__btn {
     width: 25px;
     height: 25px;
-    top: 30%; 
+    top: 50%; 
     position: absolute;
     z-index: 5000;
     background: rgba(225, 255, 255, 0.5);
@@ -333,40 +344,29 @@ main {
     cursor: pointer;
 }
 
-
-@media (min-width: 360px) {
-    .slider__btn {
-        width: 30px;
-        height: 30px;
-        top: 30%;
-        font-size: 24px;
-    }
-
-}
-
 @media (min-width: 450px) {
     .slider__btn {
-        top: 30%;
+        width: 35px;
+        height: 35px;
+        font-size: 27px;
     }
 }
 
-@media (min-width: 673px) {
+@media (min-width: 650px) {
     .slider__btn {
-        width: 40px;
-        height: 40px;
-        top: 50%; 
-        font-size: 30px;
+        width: 45px;
+        height: 45px;
+        font-size: 35px;
     }
 }
 
-
-@media (min-width: 1200px) {
+@media (min-width: 1250px) {
     .slider__btn {
-        top: 50%;
-        z-index: 5000;
+        width: 55px;
+        height: 55px;
+        font-size: 44px;
     }
 }
-
 
 .slider__btn:hover {
     background: #fff;

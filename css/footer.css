@@ -1,8 +1,7 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Cinzel&family=Monoton&display=swap');
 
 .footer {
-    font-family: 'Poppins';
+    font-family: 'acme';
     position: relative;
     z-index: -9000;
     bottom: 0;
@@ -67,7 +66,7 @@
 .map {
     margin: 10px 0 ;
     padding: 10px 0;
-    width: 260px;
+    width: 90%;
     height: 150px;;
 }
 
