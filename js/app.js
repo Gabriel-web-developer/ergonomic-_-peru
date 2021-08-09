@@ -30,6 +30,7 @@ function Next() {
   }, 500);
 }
 
+
 function Prev() {
   let sliderSection = document.querySelectorAll(".slider__li");
 let sliderSectionLast = sliderSection[sliderSection.length -1];
