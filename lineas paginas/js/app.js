@@ -1,11 +1,11 @@
 // funciona de abrir menu 
 
-let condicional = -100;
+let condicional = 100;
 var icon = document.querySelector('.icon-bars');
 var menu = document.querySelector('.menu');
 
 icon.addEventListener('click', function(){
-  if (condicional == -100) {
+  if (condicional == 100) {
     menu.classList.toggle('abrir');
   }
 

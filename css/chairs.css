@@ -41,10 +41,12 @@
 }
 
 .ul {
+    text-transform: uppercase;
     font-size: 16px;
     line-height: 2;
     font-weight: bold;
 }
+
 
 /*--- colores ---*/
 
@@ -478,6 +480,86 @@
     background: rgb(255, 238, 0);
 }
 
+/*--- attis ---*/
+
+.slider__ul__attis {
+    width: 600%;
+    display: flex;
+    margin-left: -100%;
+    text-align: center;
+}
+
+.color-attis {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #333;
+    box-shadow: 1px 1px 8px #000;;
+}
+
+/*--- confidente ---*/
+
+.slider__ul__confidente {
+    width: 400%;
+    display: flex;
+    margin-left: -100%;
+    text-align: center;
+}
+
+.color-confidente {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #333;
+    box-shadow: 1px 1px 8px #000;
+}
+
+/*--- ixia ---*/
+
+.slider__ul__ixia {
+    width: 600%;
+    display: flex;
+    text-align: center;
+    margin-left: -100%;
+}
+
+.color-ixia {
+    outline: none;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px #000;
+    background: #333;
+}
+
+/*--- idara ---*/
+
+.slider__ul__idara {
+    width: 300%;
+    display: flex;
+    text-align: center;
+    margin-left: -100%;
+}
+
+.color-idara {
+    outline: none;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px #000;
+    background: #333;
+}
+
 /*--- eros ---*/
 
 .slider__ul__eros {
@@ -567,10 +649,10 @@
 /*--- gamer ---*/
 
 .slider__ul__gamer {
-    display: flex;
-    width: 1000%;
-    margin-left: -100%;
     text-align: center;
+    display: flex;
+    margin-left: -100%;
+    width: 1000%;
 }
 
 .color-gamer {
@@ -581,7 +663,7 @@
     height: 45px;
     border-radius: 50%;
     box-shadow: 1px 1px 8px #000;
-    background: rgb(237, 2, 2);
+    background: linear-gradient(-150deg, rgb(237, 2, 2) 50% , #000  50%);
 }
 
 .color-gamer-2 {
@@ -593,7 +675,7 @@
     border-radius: 50%;
     box-shadow: 1px 1px 8px #000;
     margin-left: 5px;
-    background: rgb(7, 24, 220);
+    background: linear-gradient(-150deg, rgb(7, 24, 220) 50%, #000 50% ) ;
 }
 
 

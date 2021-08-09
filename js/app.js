@@ -17,8 +17,6 @@ const slider = document.querySelector("#slider");
 let sliderSection = document.querySelectorAll(".slider__li");
 let sliderSectionLast = sliderSection[sliderSection.length -1];
 
-
-
 slider.insertAdjacentElement('afterbegin',sliderSectionLast);
 
 function Next() {
@@ -31,7 +29,6 @@ function Next() {
    slider.style.marginLeft = "-100%"; 
   }, 500);
 }
-
 
 function Prev() {
   let sliderSection = document.querySelectorAll(".slider__li");
@@ -50,6 +47,9 @@ setInterval(function(){
   Next(); 
 }, 5000);
 
+// funcion touch 
+
+
 
 // Botones
 
@@ -66,4 +66,25 @@ btnRight.addEventListener('click', function(){
 });
 
 
+// promo slider
+
+let promo = document.querySelector('.promo__ul');
+let promo__li = document.querySelectorAll('.promo__li');
+let promoSection = promo__li[promo__li.length -1];
+
+promo.insertAdjacentElement('afterbegin', promoSection);
+
+function promoSlide() {
+  promoSectionOne = document.querySelectorAll('.promo__li')[0]; 
+  promo.style.marginLeft = "-200%";
+  setTimeout(function(){
+    promo.insertAdjacentElement('beforeend', promoSectionOne);
+    promo.style.marginLeft = "-100%"; 
+  }, 1000);
+
+}
+
+setInterval(function(){
+  promoSlide();
+}, 6000);
 
