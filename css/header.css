@@ -3,6 +3,11 @@
 @import url(main.css);
 @import url(footer.css);
 
+*::selection {
+    color:none;
+    background: none;
+}
+
 /*----------Estilos Universales---------*/
 
 * {
@@ -11,19 +16,20 @@
     box-sizing: border-box;
 }
 
-body {
-    animation: aparecer 2s linear;
+/* body {
+    animation: aparecer 1s ease-in;
+    animation-delay: 1s;
 }
 
 @keyframes aparecer {
     0% {
-        margin-top: -100%;
+        margin-bottom: -100%;
     }
 
     100% {
-        margin-top: 0%;
+        margin-bottom: 0%;
     }
-}
+} */
 
 /*------------------Tipografia----------------*/
 

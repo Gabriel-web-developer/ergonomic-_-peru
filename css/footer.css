@@ -4,6 +4,7 @@
     font-family: 'acme';
     position: relative;
     bottom: 0;
+    left: 0;
     width: 100%;
     background: #111;
     color: #eee;
@@ -113,5 +114,10 @@
     .left p {
         text-align: center;
     }
+
+    .social {
+        justify-content: center;
+    }
+
 }
 

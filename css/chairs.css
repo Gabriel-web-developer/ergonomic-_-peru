@@ -5,6 +5,7 @@
 
 /*== estilos generales ==*/
 
+
 .main__chair {
     margin-top: 60px;
 }
@@ -132,6 +133,8 @@
 
 /*--- end estilos generales ---*/
 
+/*----- Línea ejecutiva -----*/
+
 /*-------------------- SIAM --------------------*/
 
 .color-siam {
@@ -172,12 +175,11 @@
     width: 300%;
 }
 
-.video__presentacion {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-}
 
+.presentacion__video {
+    width: 100%;
+    max-height: 1500px;
+}
 /*-------------------- XENIA --------------------*/
 
 .color-xenia {
@@ -235,7 +237,7 @@
     margin-left: -100%;
     text-align: center;
     display: flex;
-    width: 400%;
+    width: 300%;
 }
 
 /*-------------------- LIANN --------------------*/
@@ -423,7 +425,610 @@
 }
 
 /*----- Linea gerencial -----*/
+
+/*--- sirius ---*/
+
+.slider__ul__sirius {
+    display: flex;
+    text-align: center;
+    width: 300%;
+    margin-left: -100%;
+}
+
+.color-sirius {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 8px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #111;
+    box-shadow: 1px 1px 8px #000;
+}
+
+/*--- magnus ---*/
+
+.slider__ul__magnus {
+    display: flex;
+    width: 300%;
+    text-align: center;
+    margin-left: -100%;
+}
+
+.color-magnus {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 8px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #111;
+    box-shadow: 1px 1px 8px #000;
+}
+
+/*--- caput ---*/
+
+.slider__ul__marsa {
+    display: flex; 
+    width: 300%;
+    text-align: center;
+    margin-left: -100%;
+}
+
+.color-marsa {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 8px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #111;
+    box-shadow: 1px 1px 8px #000;
+}
+
+/*--- basic ---*/
+
+.slider__ul__basic {
+    display: flex;
+    width: 300%;
+    margin-left: -100%;
+    text-align: center;
+}
+
+.color-basic {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 8px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #111;
+    box-shadow: 1px 1px 8px #000;
+}
+
+/*--- caput ---*/
+
+.slider__ul__caput {
+    display: flex;
+    width: 300%;
+    text-align: center;
+    margin-left: -100%;
+}
+
+.color-caput {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 8px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #111;
+    box-shadow: 1px 1px 8px #000;
+}
+
+/*--- marko ---*/
+
+.slider__ul__marko {
+    display: flex;
+    width: 500%;
+    text-align:center;
+    margin-left: -100%;
+}
+
+.color-marko {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #222;
+    box-shadow: 1px 1px 8px #000;
+
+}
+
+/*--- dick ---*/
+
+.slider__ul__dick {
+    display: flex;
+    width: 500%;
+    text-align: center;
+    margin-left: -100%;
+}
+
+.color-dick {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #111;
+    box-shadow: 1px 1px 8px #000;
+}
+
+.color-dick-2 {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 8px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #88634d;
+    box-shadow: 1px 1px 8px #000;
+}
+
+/*--- bona ---*/
+
+.slider__ul__bona {
+    display: flex;
+    width: 500%;
+    text-align: center;
+    margin-left: -100%;
+}
+
+.color-bona {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #000;
+    box-shadow: 1px 1px 8px #000;
+}
+
+.color-bona-2 {
+    margin-left: 8px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #d8d2d4;
+    box-shadow: 1px 1px 8px #000;
+}
+
+/*--- loris ---*/
+
+.slider__ul__loris {
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+
+.color-loris {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 8px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #3b3537;
+    box-shadow: 1px 1px 8px #000;   
+}
+
+/*--- rocco ---*/
+
+.slider__ul__rocco {
+    display: flex;
+    width: 600%;
+    margin-left: -100%;
+    text-align: center;
+}
+
+.color-rocco {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #544a4d;
+    box-shadow: 1px 1px 8px #000;
+}
+
+.color-rocco-2 {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 8px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #333;
+    box-shadow: 1px 1px 8px #000;
+}
+
+/*--- agneta ---*/
+
+.slider__ul__agneta {
+    width: 700%;
+    text-align: center;
+    display: flex;
+    margin-left: -100%;
+}
+
+.color-agneta {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgb(31, 31, 31);
+    box-shadow: 1px 1px 8px #000;
+}
+
+.color-agneta-2 {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: 8px;
+    box-shadow: 1px 1px 8px #000;
+    background: #eee;;
+}
+
 /*----- Linea de alta gama -----*/
+
+
+/*--- bronte ---*/
+
+.slider__ul__bronte {
+    display: flex;
+    width: 500%;
+    margin-left: -100%;
+}
+
+.color-bronte {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: 8px;
+    box-shadow: 1px 1px 8px #000;
+    background: #000;
+}
+
+/*--- miami ---*/
+
+.slider__ul__miami {
+    display: flex;
+    width: 800%;
+    text-align: center;
+    margin-left: -100%;
+}
+
+.color-miami {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: 8px;
+    box-shadow: 1px 1px 8px #000;
+    background: #000;
+}
+
+.color-miami-2 {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: 8px;
+    box-shadow: 1px 1px 8px #000;
+    background: rgb(168, 168, 168);
+}
+
+/*--- elina ---*/
+
+.slider__ul__elina {
+    display: flex;
+    width: 500%;
+    margin-left: -100%;
+    text-align: center;
+}
+
+.color-elina {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: 8px;
+    box-shadow: 1px 1px 8px #000;
+    background: #222; 
+}
+
+/*--- misuri ---*/
+
+.slider__ul__misuri {
+    display: flex;
+    width: 800%;
+    text-align: center;
+    margin-left: -100%;
+}
+
+.color-misuri {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: 8px;
+    box-shadow: 1px 1px 8px #000;
+    background: #222;
+}
+
+.color-misuri-2 {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: 8px;
+    box-shadow: 1px 1px 8px #000;
+    background: rgba(158, 158, 158, 0.8);
+}
+
+/*--- valencia ---*/
+
+.slider__ul__valencia {
+    display: flex;
+    width: 700%;
+    text-align: center;
+    margin-left: -100%;
+}
+
+.color-valencia {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: 8px;
+    box-shadow: 1px 1px 8px #000;
+    background: #222;   
+}
+
+/*--- belisa ---*/
+
+.slider__ul__belisa {
+    display: flex;
+    width: 300%;
+    text-align: center;
+    margin-left: -100%;
+}
+
+.color-belisa {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: 8px;
+    box-shadow: 1px 1px 8px #000;
+    background: #111; 
+}
+
+
+/*--- litza ---*/
+
+.slider__ul__litza {
+    display: flex;
+    width: 1000%;
+    text-align: center;
+    margin-left: -100%;
+}
+
+.color-litza {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: 8px;
+    box-shadow: 1px 1px 8px #000;
+    background: #111;
+}
+
+.color-litza-2 {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: 8px;
+    box-shadow: 1px 1px 8px #000;
+    background: linear-gradient(150deg , rgb(168, 168, 168) 50%, #eee 50%) ;
+}
+
+/*--- miami--gerente ---*/
+
+.slider__ul__miamigerente {
+    display: flex;
+    width: 900%;
+    text-align: center;
+    margin-left: -100%;
+}
+
+.color-miamigerente {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: 8px;
+    box-shadow: 1px 1px 8px #000;
+    background: #222;
+}
+
+.color-miamigerente-2 {
+    margin-left: 8px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgb(203, 203, 203);
+    box-shadow: 1px 1px 8px #000;
+}
+
+/*--- tiamat pro ---*/
+
+.slider__ul__tiamatpro {
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+
+/*--- lucia ---*/
+
+.slider__ul__lucia {
+    display: flex;
+    width: 400%;
+    text-align: center;
+    margin-left: -100%;
+}
+
+.color-lucia {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: 8px;
+    box-shadow: 1px 1px 8px #000;
+    background: #111;
+}
+
+/*--- ergoform ---*/
+
+.slider__ul__ergoform {
+    display: flex;
+    width: 700%;
+    margin-left: -100%;
+    text-align: center;
+}
+
+.color-ergoform {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: 8px;
+    box-shadow: 1px 1px 8px #000;
+    background: #111;
+}
+
+/*--- gemma pro ---*/
+
+.slider__ul__gemmapro {
+    display: flex;
+    width: 500%;
+    margin-left: -100%;
+    text-align: center;
+}
+
+.color-gemmapro {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #222;
+    box-shadow: 1px 1px 8px #000;  
+}
+
+/*--- elina pro ---*/
+
+.slider__ul__elinapro {
+    display: flex;
+    width: 600%;
+    text-align: center;
+    margin-left: -100%;
+}
+
+.color-elinapro {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #222;
+    box-shadow: 1px 1px 8px #000; 
+}
+
+/*--- zenit pro ---*/
+
+.slider__ul__zenitpro {
+    display: flex;
+    width: 600%;
+    margin-left: -100%;
+    text-align: center;
+}
+
+.color-zenitpro {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #222;
+    box-shadow: 1px 1px 8px #000;  
+}
+
 /*----- Linea de espera -----*/
 
 /*--- boston ---*/
