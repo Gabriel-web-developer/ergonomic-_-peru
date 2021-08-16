@@ -85,11 +85,9 @@
 
 
 .box-mapa {
-    display: flex;
-    justify-content: center;
     margin: 10px 0 ;
     padding: 10px 0;
-    width: 100%;
+    width: 90%;
     height: 150px;
 }
 
@@ -108,7 +106,7 @@
 
 /*---responsive---*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 799px) {
     .footer-content {
         flex-wrap: wrap;
         flex-direction: column;
@@ -134,5 +132,17 @@
         justify-content: center;
     }
 
+    .box-mapa {
+        display: flex;
+        justify-content: center;
+    }
 }
 
+@media (min-width: 2230px) {
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+}

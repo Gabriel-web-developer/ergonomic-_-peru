@@ -3,6 +3,7 @@
 @import url(main.css);
 @import url(footer.css);
 
+
 /*----------Estilos Universales---------*/
 
 *::selection {
@@ -43,9 +44,7 @@ body::-webkit-scrollbar-thumb {
 
 /*------------------Tipografia----------------*/
 
-/* @import url('https://fonts.googleapis.com/css2?family=Acme&family=Cinzel&family=Monoton&display=swap'); */
-
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Cinzel&family=Monoton&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&display=swap');
 
@@ -493,15 +492,6 @@ body::-webkit-scrollbar-thumb {
 
 
 /*------------------agregados---------*/
-
-.ligth {
-    z-index: 2000;
-    background: rgba(0,0,0,0.3);
-}
-
-.ligth-2 {
-    background: rgba(0,0,0,0.1)
-}
 
 .abrir {
     transition: all 0.5s ease-in-out;
