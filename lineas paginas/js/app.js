@@ -1,15 +1,3 @@
-// funciona de abrir menu 
-
-let condicional = 100;
-var icon = document.querySelector('.icon-bars');
-var menu = document.querySelector('.menu');
-
-icon.addEventListener('click', function(){
-  if (condicional == 100) {
-    menu.classList.toggle('abrir');
-  }
-
-});
    
 // Slider 
 
@@ -24,7 +12,7 @@ slider.insertAdjacentElement('afterbegin',sliderSectionLast);
 function Next() {
   let sliderSectionFirst = document.querySelectorAll(".slider__li")[0];
     slider.style.marginLeft = "-200%";
-    slider.style.transition = "all 0.5s";
+    slider.style.transition = "all 500ms";
     setTimeout(function(){
      slider.style.transition = "none";
    slider.insertAdjacentElement('beforeend', sliderSectionFirst);
@@ -61,5 +49,23 @@ btnRight.addEventListener('click', function(){
    Next(); 
 });
 
-// experimento 
 
+// funcion abrir menu
+
+// animacion 
+
+const menubtn = document.querySelector(".menu-btn");
+var menu = document.querySelector('.menu');
+let menuopen = false;
+
+menubtn.addEventListener("click", ()=> {
+    if(!menuopen) {
+        menubtn.classList.add("open");
+        menu.classList.add('abrir');
+        menuopen = true;
+    }else {
+        menubtn.classList.remove("open");
+        menu.classList.remove('abrir');
+        menuopen = false;
+    }
+});

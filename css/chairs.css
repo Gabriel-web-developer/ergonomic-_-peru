@@ -7,7 +7,13 @@
 
 
 .main__chair {
+    position: relative;
+    height: 71.8%;
     margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .descripcion {
@@ -152,7 +158,27 @@
     text-align: center;
     display: flex;
     margin-left: -100%;
-    width: 500%;
+    width: 600%;
+}
+
+/*-------------------- HERMES --------------------*/
+
+.slider__ul__hermes {
+    display: flex;
+    width: 700%;
+    margin-left: -100%;
+    text-align: center;
+}
+
+.color-hermes {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow: 1px 1px 9px #000;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #222;
 }
 
 /*-------------------- SONIC --------------------*/
@@ -237,7 +263,7 @@
     margin-left: -100%;
     text-align: center;
     display: flex;
-    width: 300%;
+    width: 400%;
 }
 
 /*-------------------- LIANN --------------------*/
@@ -257,7 +283,7 @@
     text-align: center;
     margin-left: -100%;
     display: flex;
-    width: 400%;
+    width: 500%;
 }
 
 /*-------------------- ESCOCIA --------------------*/
@@ -290,7 +316,7 @@
     text-align: center;
     margin-left: -100%;
     display: flex;
-    width: 500%;
+    width: 600%;
 }
 
 /*--------------------- ADARA ---------------------*/
@@ -323,7 +349,7 @@
     transition: all 500ms;
     display: flex; 
     text-align: center;
-    width: 1000%;
+    width: 1100%;
 }
 
 /*-------------------- VENECIA --------------------*/
@@ -340,6 +366,12 @@
     box-shadow: 1px 1px 8px #000;
 }
 
+.slider__ul__venecia {
+    display: flex;
+    text-align: center;;
+    width: 200%;
+    margin-left: -100%;
+}
 
 /*--------------------- NIZA ---------------------*/
 
@@ -535,7 +567,7 @@
 
 .slider__ul__marko {
     display: flex;
-    width: 500%;
+    width: 400%;
     text-align:center;
     margin-left: -100%;
 }
@@ -588,7 +620,7 @@
 
 .slider__ul__bona {
     display: flex;
-    width: 500%;
+    width: 300%;
     text-align: center;
     margin-left: -100%;
 }
@@ -619,7 +651,8 @@
 /*--- loris ---*/
 
 .slider__ul__loris {
-    width: 100%;
+    width: 400%;
+    margin-left: -100%;
     text-align: center;
     display: flex;
 }
@@ -652,7 +685,7 @@
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    background: #544a4d;
+    background: rgb(77, 46, 46);
     box-shadow: 1px 1px 8px #000;
 }
 
@@ -664,7 +697,7 @@
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    background: #333;
+    background: #111;
     box-shadow: 1px 1px 8px #000;
 }
 
@@ -702,7 +735,6 @@
 
 /*----- Linea de alta gama -----*/
 
-
 /*--- bronte ---*/
 
 .slider__ul__bronte {
@@ -712,6 +744,27 @@
 }
 
 .color-bronte {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: 8px;
+    box-shadow: 1px 1px 8px #000;
+    background: #000;
+}
+
+/*--- zenit ---*/
+
+.slider__ul__zenit {
+    display: flex;
+    text-align: center;
+    margin-left: -100%;
+    width: 400%;
+}
+
+.color-zenit {
     outline: none;
     border: none;
     cursor: pointer;
@@ -810,16 +863,88 @@
     background: rgba(158, 158, 158, 0.8);
 }
 
-/*--- valencia ---*/
+/*--- baikal pro ---*/
 
-.slider__ul__valencia {
+.slider__ul__baikalpro {
+    display: flex;
+    width: 600%;
+    text-align: center;
+    margin-left: -100%;
+}
+
+.color-baikalpro {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: 8px;
+    box-shadow: 1px 1px 8px #000;
+    background: #111;
+}
+
+/*--- texas pro ---*/
+
+.slider__ul__texaspro {
+    display: flex;
+    width: 900%;
+    text-align: center;
+    margin-left: -100%;
+}
+
+.color-texaspro {
+    margin: 0 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px #000;
+    background: linear-gradient(150deg, #214c74 50%, #eee 50%);
+}
+
+.color-texaspro-2 {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px #000;
+    background: #222;
+}
+
+.color-texaspro-3 {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px #000;
+    background: linear-gradient(150deg, rgb(143, 143, 143) 50%, #eee 50%) ;
+}
+
+.texas-btn-slider-left {
+    left: 0.5px;
+}
+
+.texas-btn-slider-right {
+    right: 0.5px;
+}
+
+/*--- argon ---*/
+
+.slider__ul__argon {
     display: flex;
     width: 700%;
     text-align: center;
     margin-left: -100%;
 }
 
-.color-valencia {
+.color-argon {
     outline: none;
     border: none;
     cursor: pointer;
@@ -919,12 +1044,135 @@
     box-shadow: 1px 1px 8px #000;
 }
 
+/*--- atze pro ---*/
+
+.slider__ul__atzepro {
+    display: flex;
+    width: 100%;
+}
+
+.color-atzepro {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px #000;
+    background: #222;
+}
+
+.color-atzepro-2 {
+    margin: 0 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px #000;
+    background: linear-gradient(150deg, #214c74 50%, #eee 50%);
+}
+
+.color-atzepro-3 {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px #000;
+    background: linear-gradient(150deg, rgb(143, 143, 143) 50%, #eee 50%) ;
+}
+
 /*--- tiamat pro ---*/
 
 .slider__ul__tiamatpro {
     display: flex;
-    width: 100%;
+    width: 400%;
+    margin-left: -100%;
     text-align: center;
+}
+
+.color-tiamatpro {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: 8px;
+    box-shadow: 1px 1px 8px #000;
+    background: #222;
+}
+
+
+.color-tiamatpro-2 {
+    margin: 0 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px #000;
+    background: linear-gradient(150deg, #214c74 50%, #eee 50%);
+}
+
+.color-tiamatpro-3 {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px #000;
+    background: linear-gradient(150deg, rgb(143, 143, 143) 50%, #eee 50%) ;
+}
+
+/*--- damon pro ---*/
+
+.slider__ul__damonpro {
+    display: flex;
+    width: 300%;
+    margin-left: -100%;
+    text-align:center;
+}
+
+.color-damonpro {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: 8px;
+    box-shadow: 1px 1px 8px #000;
+    background: #222;
+}
+
+
+.color-damonpro-2 {
+    margin: 0 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px #000;
+    background: linear-gradient(150deg, #214c74 50%, #eee 50%);
+}
+
+.color-damonpro-3 {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px #000;
+    background: linear-gradient(150deg, rgb(143, 143, 143) 50%, #eee 50%) ;
 }
 
 /*--- lucia ---*/
@@ -1234,7 +1482,7 @@
 /*--- orieta ---*/
 
 .slider__ul__orieta {
-    width: 300%;
+    width: 400%;
     margin-left: -100%;
     text-align: center;
     display: flex;

@@ -1,14 +1,21 @@
 // funciona de abrir menu 
 
-let condicional = -100;
-var icon = document.querySelector('.icon-bars');
+// animacion 
+
+const menubtn = document.querySelector(".menu-btn");
 var menu = document.querySelector('.menu');
+let menuopen = false;
 
-icon.addEventListener('click', function(){
-  if (condicional == -100) {
-    menu.classList.toggle('abrir');
-  }
-
+menubtn.addEventListener("click", ()=> {
+    if(!menuopen) {
+        menubtn.classList.add("open");
+        menu.classList.add('abrir');
+        menuopen = true;
+    }else {
+        menubtn.classList.remove("open");
+        menu.classList.remove('abrir');
+        menuopen = false;
+    }
 });
    
 // Slider 
