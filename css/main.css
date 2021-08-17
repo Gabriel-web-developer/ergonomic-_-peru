@@ -5,8 +5,6 @@
 
 .main {
     font-family: 'cinze', sans-serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
 /*------------------------Intro page--------------------*/
@@ -74,6 +72,9 @@
 /*------------------box-----------------*/
 
 .main__title {
+    font-family: 'cinze', sans-serif;
+    font-weight: 400;
+    font-style: normal;
     text-align: center;
     margin: 10px;
 }
@@ -196,7 +197,7 @@
 @media (min-width: 400px) {
     .content__right {
         width: 320px;
-        height: 600px;
+        height: max-content;
     }
 }
 
@@ -268,16 +269,24 @@
 }
 
 .video__father {
+    text-align: center;
     position: relative;
 }
 
 .video {
-    width: 700px;
-    margin: 5px 0;
-    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: 1px 1px 10px #000;
+    width: 90%;
     margin: auto;
+    border-radius: 5px;
 }
 
+@media (min-width: 1200px) {
+    .video {
+        width: 800px;
+    }
+}
 
 /*------------------sliders------------------*/
 
